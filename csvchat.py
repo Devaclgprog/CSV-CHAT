@@ -108,7 +108,8 @@ if uploaded_file and not st.session_state.csv_chat["file_processed"]:
                         "strictly based on the dataset. Be professional yet friendly. "
                         "For data questions, include relevant statistics. For visualization "
                         "requests, describe the chart that would best represent the answer. "
-                        "If information isn't in the data, say so. For irrelevant questions, "
+                        "If information isn't in the data, say so. For irrelevant questions "
+                        "Don't provide the same responses, change the sentence if the same questions was asked repeatedly"
                         "gently redirect to the dataset content."
                     ]
                 }
